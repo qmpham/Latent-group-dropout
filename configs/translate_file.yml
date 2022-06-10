@@ -1,0 +1,16 @@
+src:
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/UFAL.med.en-fr.tst.en
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/ECB.en-fr.tst.en
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/IT.en-fr.tst.en
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/JRC-Acquis.en-fr.tst.en
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/Tanzil.en-fr.tst.en
+        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/TED2013.en-fr.tst.en
+
+domain:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+max_count: 5
