@@ -8,30 +8,28 @@ This is publish code for the paper "Latent Group Dropout for Multilingual and Mu
 * TensorFlow Probability == 0.13
 * TensorFlow addons == 0.13
 * OpenNMT-tf == 2.1.1
-* cuda == 11.2
-* cudnn == 8.1.1
 
 # Format of slurm bash
-#!/bin/bash \\
-#SBATCH --gres=gpu:8 \\
-#SBATCH --partition=gpu_p4 \\
-#SBATCH --nodes=1 \\
-#SBATCH --time=20:00:00 \\
-#SBATCH --cpus-per-task=50 \\
-#SBATCH --output=multi_domain_1365.log.out \\
-#SBATCH --error=multi_domain_1365.log.err \\
-#SBATCH -A sfz@gpu \\
-module purge \\
-source /gpfsdswork/projects/rech/sfz/utt84zy/anaconda3/etc/profile.d/conda.sh \\
-conda activate mdmt \\
-module load cuda/11.2 \\
-module load cudnn/8.1.1.33-cuda \\
-module load nccl/2.4.2-1+cuda10.1 \\
-module load gcc/10.1.0-cuda-openacc \\
-module load cmake/3.18.0 \\
-which python \\
-python -c 'import tensorflow; print("tensorflow OK"); import transformers; print("transformers OK")' \\
-python -u practice.py train_elbo_topK_sparse_layer_multi_layer --config configs/config_1365.yml \\
+#!/bin/bash <br>
+#SBATCH --gres=gpu:8 <br>
+#SBATCH --partition=gpu_p4 <br>
+#SBATCH --nodes=1 <br>
+#SBATCH --time=20:00:00 <br>
+#SBATCH --cpus-per-task=50 <br>
+#SBATCH --output=multi_domain_1365.log.out <br>
+#SBATCH --error=multi_domain_1365.log.err <br>
+#SBATCH -A sfz@gpu <br>
+module purge <br>
+source /gpfsdswork/projects/rech/sfz/utt84zy/anaconda3/etc/profile.d/conda.sh <br>
+conda activate mdmt <br>
+module load cuda/11.2 <br>
+module load cudnn/8.1.1.33-cuda <br>
+module load nccl/2.4.2-1+cuda10.1 <br>
+module load gcc/10.1.0-cuda-openacc <br>
+module load cmake/3.18.0 <br>
+which python <br>
+python -c 'import tensorflow; print("tensorflow OK"); import transformers; print("transformers OK")' <br>
+python -u practice.py train_elbo_topK_sparse_layer_multi_layer --config configs/config_1365.yml <br>
 
 # Config file format (one example already provided in configs)
 
@@ -140,3 +138,5 @@ temperature: 1.0
 # For the inference, please use this command
 
 python -u practice.py translate_topK_sparse_layer_multi_layer --config configs/config_1365.yml --src configs/translate_file.yml
+
+The ouput files will be located in model_dir/eval (or in this case is /gpfsdsstore/projects/rech/sfz/utt84zy/models/config_1365/eval)
