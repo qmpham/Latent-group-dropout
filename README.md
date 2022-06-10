@@ -48,56 +48,94 @@ eval_ref:
 eval_domain:
 
 src_vocab: 
+
 tgt_vocab: 
 
 model_dir: 
 
 batch_train_size: 3072
+
 batch_meta_train_size: 3072
+
 batch_meta_test_size: 3072
+
 batch_type: tokens
+
 experiment: TopK_Sparse_Layers_multi_layer
+
 num_units: 512
+
 num_heads: 8
+
 ffn_inner_dim: 2048
+
 dropout: 0.1
+
 ffn_dropout: 0.1
+
 attention_dropout: 0.1
+
 version: 2
+
 accumulation_step: 1
+
 train_steps: 300000
+
 num_domain_unit_group: 16
+
 num_shared_units: 0
+
 unit_group_size: 32
+
 domain_group_allocation_num: 12
+
 gumbel_temperature_decay: 1000
+
 r_coeff: 0.00005
+
 kl_coeff: 0.0001
+
 latent_logit_lr: 0.001
+
 min_temperature: 0.2
+
 start_temperature: 0.2
+
 step_duration: 8
+
 save_every: 5000
+
 eval_every: 10000
+
 num_domains: 20
+
 num_inspected_domains: 6
+
 picking_prob: Natural
+
 temperature: 1.0
+
 learning_rate: 1.0
 
 # Attention!!! Please do not change these following options
 
 batch_type: tokens
+
 experiment: TopK_Sparse_Layers_multi_layer
-num_units: 512
-num_heads: 8
-ffn_inner_dim: 2048
-dropout: 0.1
-ffn_dropout: 0.1
-attention_dropout: 0.1
+
 version: 2
-accumulation_step: 1
-train_steps: 300000
+
 num_domain_unit_group: 16
+
 num_shared_units: 0
+
 unit_group_size: 32
+
+domain_group_allocation_num: 12
+
+picking_prob: Natural
+
+temperature: 1.0
+
+# For the inference, please use this command
+
