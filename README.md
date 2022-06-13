@@ -53,10 +53,6 @@ model_dir:
 
 batch_train_size: 3072
 
-batch_meta_train_size: 3072
-
-batch_meta_test_size: 3072
-
 batch_type: tokens
 
 experiment: TopK_Sparse_Layers_multi_layer
