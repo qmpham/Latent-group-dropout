@@ -1,17 +1,17 @@
 src: 
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/UFAL.med.en-fr.train.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/ECB.en-fr.train.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/IT.en-fr.train.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/JRC-Acquis.en-fr.train.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/Tanzil.en-fr.train.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/TED2013.en-fr.train.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-en.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-es.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-de.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-es.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-de.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-en.es
 tgt: 
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/UFAL.med.en-fr.train.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/ECB.en-fr.train.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/IT.en-fr.train.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/JRC-Acquis.en-fr.train.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/Tanzil.en-fr.train.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/TED2013.en-fr.train.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-en.en
 domain:
         - 0
         - 1
@@ -20,20 +20,20 @@ domain:
         - 4
         - 5
 eval_src:
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/UFAL.med.en-fr.dev.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/ECB.en-fr.dev.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/IT.en-fr.dev.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/JRC-Acquis.en-fr.dev.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/Tanzil.en-fr.dev.en
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/TED2013.en-fr.dev.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-en.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-es.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-de.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-es.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-de.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-en.es
 
 eval_ref:
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/UFAL.med.en-fr.dev.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/ECB.en-fr.dev.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/IT.en-fr.dev.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/JRC-Acquis.en-fr.dev.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/Tanzil.en-fr.dev.fr
-        - /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/TED2013.en-fr.dev.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-en.en
 
 eval_domain:
         - 0
@@ -43,14 +43,12 @@ eval_domain:
         - 4
         - 5
 
-src_vocab: /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/vocab.en_fr
-tgt_vocab: /gpfsdswork/projects/rech/sfz/utt84zy/clean_data/vocab.en_fr
+src_vocab: /home/minhquang.pham/Latent-group-dropout/vocab/m2m11.spm.vocab
+tgt_vocab: /home/minhquang.pham/Latent-group-dropout/vocab/m2m11.spm.vocab
 
-model_dir: /gpfsdsstore/projects/rech/sfz/utt84zy/models/config_1365
+model_dir: /share3/users/quang/models/multilingual/lamgd
 
 batch_train_size: 3072
-batch_meta_train_size: 3072
-batch_meta_test_size: 3072
 batch_type: tokens
 experiment: TopK_Sparse_Layers_multi_layer
 num_units: 512
