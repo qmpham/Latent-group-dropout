@@ -1,5 +1,4 @@
 import sys
-sys.path.append("/gpfsdswork/projects/rech/sfz/utt84zy/anaconda3/envs/huggingface/lib/python3.7/site-packages")
 
 from opennmt.encoders.rnn_encoder import _RNNEncoderBase
 import tensorflow as tf

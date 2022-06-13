@@ -1,7 +1,6 @@
 """Dataset creation and transformations."""
 import sys
 from typing import List
-sys.path.append("/gpfsdswork/projects/rech/sfz/utt84zy/anaconda3/envs/huggingface/lib/python3.7/site-packages")
 
 import numpy as np
 import tensorflow as tf
