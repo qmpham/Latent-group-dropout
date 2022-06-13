@@ -1,6 +1,5 @@
 """Define the self-attention encoder."""
 import sys
-sys.path.append("/gpfsdswork/projects/rech/sfz/utt84zy/anaconda3/envs/huggingface/lib/python3.7/site-packages")
 
 import tensorflow as tf
 
