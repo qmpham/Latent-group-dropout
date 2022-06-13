@@ -1,6 +1,6 @@
 # Latent-group-dropout
 
-This is publish code for the paper "Latent Group Dropout for Multilingual and Multidomain Machine Translation" accepted to the Findings of NAACL 2022.
+This is code for my paper "Latent Group Dropout for Multilingual and Multidomain Machine Translation" (Minh-Quang PHAM, François Yvon, Josep Crego) accepted to the Findings of NAACL 2022. 
 
 # Requirements
 * TensorFlow == 2.3
