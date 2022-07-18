@@ -1,0 +1,424 @@
+src: 
+        - /app/temp/train.de-en.de
+        - /app/temp/train.de-es.de
+        - /app/temp/train.de-fr.de
+        - /app/temp/train.de-it.de
+        - /app/temp/train.de-nl.de
+        - /app/temp/train.de-pl.de
+        - /app/temp/train.de-pt.de
+        - /app/temp/train.de-ro.de
+        - /app/temp/train.de-ru.de
+        - /app/temp/train.de-uk.de
+        - /app/temp/train.en-de.en
+        - /app/temp/train.en-es.en
+        - /app/temp/train.en-fr.en
+        - /app/temp/train.en-it.en
+        - /app/temp/train.en-nl.en
+        - /app/temp/train.en-pl.en
+        - /app/temp/train.en-pt.en
+        - /app/temp/train.en-ro.en
+        - /app/temp/train.en-ru.en
+        - /app/temp/train.en-uk.en
+        - /app/temp/train.es-de.es
+        - /app/temp/train.es-en.es
+        - /app/temp/train.es-fr.es
+        - /app/temp/train.es-it.es
+        - /app/temp/train.es-nl.es
+        - /app/temp/train.es-pl.es
+        - /app/temp/train.es-pt.es
+        - /app/temp/train.es-ro.es
+        - /app/temp/train.es-ru.es
+        - /app/temp/train.es-uk.es
+        - /app/temp/train.fr-de.fr
+        - /app/temp/train.fr-en.fr
+        - /app/temp/train.fr-es.fr
+        - /app/temp/train.fr-it.fr
+        - /app/temp/train.fr-nl.fr
+        - /app/temp/train.fr-pl.fr
+        - /app/temp/train.fr-pt.fr
+        - /app/temp/train.fr-ro.fr
+        - /app/temp/train.fr-ru.fr
+        - /app/temp/train.fr-uk.fr
+        - /app/temp/train.it-de.it
+        - /app/temp/train.it-en.it
+        - /app/temp/train.it-es.it
+        - /app/temp/train.it-fr.it
+        - /app/temp/train.it-nl.it
+        - /app/temp/train.it-pl.it
+        - /app/temp/train.it-pt.it
+        - /app/temp/train.it-ro.it
+        - /app/temp/train.it-ru.it
+        - /app/temp/train.it-uk.it
+        - /app/temp/train.nl-de.nl
+        - /app/temp/train.nl-en.nl
+        - /app/temp/train.nl-es.nl
+        - /app/temp/train.nl-fr.nl
+        - /app/temp/train.nl-it.nl
+        - /app/temp/train.nl-pl.nl
+        - /app/temp/train.nl-pt.nl
+        - /app/temp/train.nl-ro.nl
+        - /app/temp/train.nl-ru.nl
+        - /app/temp/train.nl-uk.nl
+        - /app/temp/train.pl-de.pl
+        - /app/temp/train.pl-en.pl
+        - /app/temp/train.pl-es.pl
+        - /app/temp/train.pl-fr.pl
+        - /app/temp/train.pl-it.pl
+        - /app/temp/train.pl-nl.pl
+        - /app/temp/train.pl-pt.pl
+        - /app/temp/train.pl-ro.pl
+        - /app/temp/train.pl-ru.pl
+        - /app/temp/train.pl-uk.pl
+        - /app/temp/train.pt-de.pt
+        - /app/temp/train.pt-en.pt
+        - /app/temp/train.pt-es.pt
+        - /app/temp/train.pt-fr.pt
+        - /app/temp/train.pt-it.pt
+        - /app/temp/train.pt-nl.pt
+        - /app/temp/train.pt-pl.pt
+        - /app/temp/train.pt-ro.pt
+        - /app/temp/train.pt-ru.pt
+        - /app/temp/train.pt-uk.pt
+        - /app/temp/train.ro-de.ro
+        - /app/temp/train.ro-en.ro
+        - /app/temp/train.ro-es.ro
+        - /app/temp/train.ro-fr.ro
+        - /app/temp/train.ro-it.ro
+        - /app/temp/train.ro-nl.ro
+        - /app/temp/train.ro-pl.ro
+        - /app/temp/train.ro-pt.ro
+        - /app/temp/train.ro-ru.ro
+        - /app/temp/train.ro-uk.ro
+        - /app/temp/train.ru-de.ru
+        - /app/temp/train.ru-en.ru
+        - /app/temp/train.ru-es.ru
+        - /app/temp/train.ru-fr.ru
+        - /app/temp/train.ru-it.ru
+        - /app/temp/train.ru-nl.ru
+        - /app/temp/train.ru-pl.ru
+        - /app/temp/train.ru-pt.ru
+        - /app/temp/train.ru-ro.ru
+        - /app/temp/train.ru-uk.ru
+        - /app/temp/train.uk-de.uk
+        - /app/temp/train.uk-en.uk
+        - /app/temp/train.uk-es.uk
+        - /app/temp/train.uk-fr.uk
+        - /app/temp/train.uk-it.uk
+        - /app/temp/train.uk-nl.uk
+        - /app/temp/train.uk-pl.uk
+        - /app/temp/train.uk-pt.uk
+        - /app/temp/train.uk-ro.uk
+        - /app/temp/train.uk-ru.uk  
+        
+tgt: 
+        - /app/temp/train.de-en.en
+        - /app/temp/train.de-es.es
+        - /app/temp/train.de-fr.fr
+        - /app/temp/train.de-it.it
+        - /app/temp/train.de-nl.nl
+        - /app/temp/train.de-pl.pl
+        - /app/temp/train.de-pt.pt
+        - /app/temp/train.de-ro.ro
+        - /app/temp/train.de-ru.ru
+        - /app/temp/train.de-uk.uk
+        - /app/temp/train.en-de.de
+        - /app/temp/train.en-es.es
+        - /app/temp/train.en-fr.fr
+        - /app/temp/train.en-it.it
+        - /app/temp/train.en-nl.nl
+        - /app/temp/train.en-pl.pl
+        - /app/temp/train.en-pt.pt
+        - /app/temp/train.en-ro.ro
+        - /app/temp/train.en-ru.ru
+        - /app/temp/train.en-uk.uk
+        - /app/temp/train.es-de.de
+        - /app/temp/train.es-en.en
+        - /app/temp/train.es-fr.es
+        - /app/temp/train.es-it.it
+        - /app/temp/train.es-nl.nl
+        - /app/temp/train.es-pl.pl
+        - /app/temp/train.es-pt.pt
+        - /app/temp/train.es-ro.ro
+        - /app/temp/train.es-ru.ru
+        - /app/temp/train.es-uk.uk
+        - /app/temp/train.fr-de.de
+        - /app/temp/train.fr-en.en
+        - /app/temp/train.fr-es.es
+        - /app/temp/train.fr-it.it
+        - /app/temp/train.fr-nl.nl
+        - /app/temp/train.fr-pl.pl
+        - /app/temp/train.fr-pt.pt
+        - /app/temp/train.fr-ro.ro
+        - /app/temp/train.fr-ru.ru
+        - /app/temp/train.fr-uk.uk
+        - /app/temp/train.it-de.de
+        - /app/temp/train.it-en.en
+        - /app/temp/train.it-es.es
+        - /app/temp/train.it-fr.fr
+        - /app/temp/train.it-nl.nl
+        - /app/temp/train.it-pl.pl
+        - /app/temp/train.it-pt.pt
+        - /app/temp/train.it-ro.ro
+        - /app/temp/train.it-ru.ru
+        - /app/temp/train.it-uk.uk
+        - /app/temp/train.nl-de.de
+        - /app/temp/train.nl-en.en
+        - /app/temp/train.nl-es.es
+        - /app/temp/train.nl-fr.fr
+        - /app/temp/train.nl-it.it
+        - /app/temp/train.nl-pl.pl
+        - /app/temp/train.nl-pt.pt
+        - /app/temp/train.nl-ro.ro
+        - /app/temp/train.nl-ru.ru
+        - /app/temp/train.nl-uk.uk
+        - /app/temp/train.pl-de.de
+        - /app/temp/train.pl-en.en
+        - /app/temp/train.pl-es.es
+        - /app/temp/train.pl-fr.fr
+        - /app/temp/train.pl-it.it
+        - /app/temp/train.pl-nl.nl
+        - /app/temp/train.pl-pt.pt
+        - /app/temp/train.pl-ro.ro
+        - /app/temp/train.pl-ru.ru
+        - /app/temp/train.pl-uk.uk
+        - /app/temp/train.pt-de.de
+        - /app/temp/train.pt-en.en
+        - /app/temp/train.pt-es.es
+        - /app/temp/train.pt-fr.fr
+        - /app/temp/train.pt-it.it
+        - /app/temp/train.pt-nl.nl
+        - /app/temp/train.pt-pl.pl
+        - /app/temp/train.pt-ro.ro
+        - /app/temp/train.pt-ru.ru
+        - /app/temp/train.pt-uk.uk
+        - /app/temp/train.ro-de.de
+        - /app/temp/train.ro-en.en
+        - /app/temp/train.ro-es.es
+        - /app/temp/train.ro-fr.fr
+        - /app/temp/train.ro-it.it
+        - /app/temp/train.ro-nl.nl
+        - /app/temp/train.ro-pl.pl
+        - /app/temp/train.ro-pt.pt
+        - /app/temp/train.ro-ru.ru
+        - /app/temp/train.ro-uk.uk
+        - /app/temp/train.ru-de.de
+        - /app/temp/train.ru-en.en
+        - /app/temp/train.ru-es.es
+        - /app/temp/train.ru-fr.fr
+        - /app/temp/train.ru-it.it
+        - /app/temp/train.ru-nl.nl
+        - /app/temp/train.ru-pl.pl
+        - /app/temp/train.ru-pt.pt
+        - /app/temp/train.ru-ro.ro
+        - /app/temp/train.ru-uk.uk
+        - /app/temp/train.uk-de.de
+        - /app/temp/train.uk-en.en
+        - /app/temp/train.uk-es.es
+        - /app/temp/train.uk-fr.fr
+        - /app/temp/train.uk-it.it
+        - /app/temp/train.uk-nl.nl
+        - /app/temp/train.uk-pl.pl
+        - /app/temp/train.uk-pt.pt
+        - /app/temp/train.uk-ro.ro
+        - /app/temp/train.uk-ru.ru
+
+domain:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+
+eval_src:
+        - /app/temp/dev.en-de.en
+        - /app/temp/dev.en-es.en
+        - /app/temp/dev.en-fr.en
+        - /app/temp/dev.en-it.en
+        - /app/temp/dev.en-nl.en
+        - /app/temp/dev.en-pl.en
+        - /app/temp/dev.en-pt.en
+        - /app/temp/dev.en-ro.en
+        - /app/temp/dev.en-ru.en
+        - /app/temp/dev.en-uk.en
+
+
+eval_ref:
+        - /app/temp/dev.en-de.de
+        - /app/temp/dev.en-es.es
+        - /app/temp/dev.en-fr.fr
+        - /app/temp/dev.en-it.it
+        - /app/temp/dev.en-nl.nl
+        - /app/temp/dev.en-pl.pl
+        - /app/temp/dev.en-pt.pt
+        - /app/temp/dev.en-ro.ro
+        - /app/temp/dev.en-ru.ru
+        - /app/temp/dev.en-uk.uk
+
+eval_domain:
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+
+src_vocab: /app/vocab/dict.S11
+tgt_vocab: /app/vocab/dict.T11
+
+model_dir: /app/models/lamgd
+
+#
+batch_train_size: 4096
+batch_type: tokens
+experiment: TopK_Sparse_Layers_multi_layer
+multi_domain: True
+multilingual: True
+num_layers: 12
+num_units: 1024
+num_heads: 16
+ffn_inner_dim: 4096
+dropout: 0.3
+ffn_dropout: 0.1
+attention_dropout: 0.1
+version: 2
+accumulation_step: 12
+train_steps: 150000
+num_domain_unit_group: 32
+num_shared_units: 0
+unit_group_size: 32
+domain_group_allocation_num: 24
+gumbel_temperature_decay: 1000
+r_coeff: 0.00005
+kl_coeff: 0.0001
+latent_logit_lr: 0.001
+min_temperature: 0.2
+start_temperature: 0.2
+step_duration: 1
+save_every: 2500
+eval_every: 5000
+report_every: 1
+num_domains: 200
+num_languages: 11
+num_inspected_domains: 6
+picking_prob: Natural
+temperature: 1.0
+learning_rate: 1.0

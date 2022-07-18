@@ -1,0 +1,94 @@
+src: 
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/med.train.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/law.train.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/IT.train.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/bank.train.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/rel.train.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/ted.train.en        
+        
+tgt: 
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/med.train.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/law.train.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/IT.train.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/bank.train.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/rel.train.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/ted.train.fr
+        
+
+domain:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        
+
+eval_src:
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/med.dev.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/law.dev.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/IT.dev.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/bank.dev.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/rel.dev.en
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/ted.dev.en
+        
+
+eval_ref:
+
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/med.dev.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/law.dev.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/IT.dev.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/bank.dev.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/rel.dev.fr
+        - /home/minhquang.pham/tacl_share_data_raw/spm_tok/ted.dev.fr
+        
+
+eval_domain:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        
+
+src_vocab: /home/minhquang.pham/tacl_share_data_raw/mdmt.vocab
+tgt_vocab: /home/minhquang.pham/tacl_share_data_raw/mdmt.vocab
+
+model_dir: /share3/users/quang/models/multidomain/lamgd
+
+#TopK_Sparse_Layers_multi_layer
+batch_train_size: 8192
+batch_type: tokens
+experiment: baselinev3
+multi_domain: False
+multilingual: True
+num_units: 512
+num_heads: 8
+num_layers: 6
+ffn_inner_dim: 2048
+dropout: 0.1
+ffn_dropout: 0.1
+attention_dropout: 0.1
+version: 2
+accumulation_step: 12
+train_steps: 150000
+num_domain_unit_group: 32
+num_shared_units: 0
+unit_group_size: 16
+domain_group_allocation_num: 12
+gumbel_temperature_decay: 1000
+r_coeff: 0.00005
+kl_coeff: 0.000
+latent_logit_lr: 0.000
+min_temperature: 0.2
+start_temperature: 0.5
+step_duration: 1
+save_every: 5000
+eval_every: 10000
+num_domains: 200
+num_languages: 11
+num_inspected_domains: 6
+picking_prob: Natural
+temperature: 1.0
+learning_rate: 1.0

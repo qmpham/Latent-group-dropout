@@ -1,17 +1,227 @@
 src: 
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-en.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-es.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-fr.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-it.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-nl.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-pl.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-pt.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-ro.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-ru.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-uk.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-de.en
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-es.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-fr.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-it.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-nl.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-pl.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-pt.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-ro.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-ru.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-uk.en
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-de.es
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-en.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-fr.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-it.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-nl.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-pl.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-pt.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-ro.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-ru.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-uk.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-de.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-en.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-es.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-it.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-nl.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-pl.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-pt.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-ro.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-ru.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-uk.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-de.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-en.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-es.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-fr.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-nl.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-pl.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-pt.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-ro.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-ru.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-uk.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-de.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-en.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-es.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-fr.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-it.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-pl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-pt.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-ro.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-ru.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-uk.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-de.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-en.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-es.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-fr.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-it.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-nl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-pt.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-ro.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-ru.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-uk.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-de.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-en.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-es.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-fr.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-it.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-nl.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-pl.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-ro.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-ru.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-uk.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-de.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-en.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-es.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-fr.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-it.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-nl.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-pl.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-pt.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-ru.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-uk.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-de.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-en.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-es.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-fr.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-it.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-nl.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-pl.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-pt.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-ro.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-uk.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-de.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-en.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-es.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-fr.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-it.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-nl.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-pl.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-pt.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-ro.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-ru.uk  
+        
 tgt: 
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-en.en
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.de-uk.uk
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-de.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.en-uk.uk
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-de.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-fr.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.es-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.fr-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.it-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.nl-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pl-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.pt-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ro-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.ru-uk.uk
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-de.de
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-es.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/train.uk-ru.ru
+
 domain:
         - 0
         - 1
@@ -19,61 +229,194 @@ domain:
         - 3
         - 4
         - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+        - 42
+        - 43
+        - 44
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 54
+        - 55
+        - 56
+        - 57
+        - 58
+        - 59
+        - 60
+        - 61
+        - 62
+        - 63
+        - 64
+        - 65
+        - 66
+        - 67
+        - 68
+        - 69
+        - 70
+        - 71
+        - 72
+        - 73
+        - 74
+        - 75
+        - 76
+        - 77
+        - 78
+        - 79
+        - 80
+        - 81
+        - 82
+        - 83
+        - 84
+        - 85
+        - 86
+        - 87
+        - 88
+        - 89
+        - 90
+        - 91
+        - 92
+        - 93
+        - 94
+        - 95
+        - 96
+        - 97
+        - 98
+        - 99
+        - 100
+        - 101
+        - 102
+        - 103
+        - 104
+        - 105
+        - 106
+        - 107
+        - 108
+        - 109
+
 eval_src:
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-en.de
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-es.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-de.en
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-es.en
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-de.es
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-en.es
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-fr.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-it.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-nl.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-pl.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-pt.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-ro.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-ru.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-uk.en
+
 
 eval_ref:
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-en.en
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.de-es.es
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-de.de
         - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-es.es
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-de.de
-        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.es-en.en
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-fr.fr
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-it.it
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-nl.nl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-pl.pl
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-pt.pt
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-ro.ro
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-ru.ru
+        - /share3/users/quang/data/multilingual/train_dev_test_tok/spm_tok/temp/dev.en-uk.uk
 
 eval_domain:
-        - 0
-        - 1
-        - 2
-        - 3
-        - 4
-        - 5
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
 
-src_vocab: /home/minhquang.pham/Latent-group-dropout/vocab/m2m11.spm.vocab
-tgt_vocab: /home/minhquang.pham/Latent-group-dropout/vocab/m2m11.spm.vocab
+src_vocab: /share3/users/quang/workspace/Latent-group-dropout/vocab/dict.S11
+tgt_vocab: /share3/users/quang/workspace/Latent-group-dropout/vocab/dict.T11
 
 model_dir: /share3/users/quang/models/multilingual/lamgd
 
-batch_train_size: 3072
+#
+batch_train_size: 4096
 batch_type: tokens
 experiment: TopK_Sparse_Layers_multi_layer
-num_units: 512
-num_heads: 8
-ffn_inner_dim: 2048
-dropout: 0.1
+multi_domain: True
+multilingual: True
+num_layers: 12
+num_units: 1024
+num_heads: 16
+ffn_inner_dim: 4096
+dropout: 0.3
 ffn_dropout: 0.1
 attention_dropout: 0.1
 version: 2
-accumulation_step: 1
-train_steps: 300000
-num_domain_unit_group: 16
+accumulation_step: 12
+train_steps: 150000
+num_domain_unit_group: 32
 num_shared_units: 0
 unit_group_size: 32
-domain_group_allocation_num: 12
+domain_group_allocation_num: 24
 gumbel_temperature_decay: 1000
 r_coeff: 0.00005
 kl_coeff: 0.0001
 latent_logit_lr: 0.001
 min_temperature: 0.2
 start_temperature: 0.2
-step_duration: 8
-save_every: 5000
-eval_every: 10000
-num_domains: 20
+step_duration: 1
+save_every: 2500
+eval_every: 5000
+num_domains: 200
+num_languages: 11
 num_inspected_domains: 6
 picking_prob: Natural
 temperature: 1.0

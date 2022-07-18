@@ -1,0 +1,47 @@
+# load base image for docker
+FROM nvidia/cuda:11.1-cudnn8-devel
+
+# setting environment variables
+ENV LANG=C.UTF-8 LC_ALL=C.UTF-8
+
+# install python and additional software
+RUN \
+    # Update nvidia GPG key
+    rm /etc/apt/sources.list.d/cuda.list && \
+    rm /etc/apt/sources.list.d/nvidia-ml.list && \
+    apt-key del 7fa2af80 && \
+    apt-get update && apt-get install -y --no-install-recommends wget && \
+    wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb && \
+    dpkg -i cuda-keyring_1.0-1_all.deb && \
+    apt-get update && \
+    apt-get install -y wget git curl bzip2 vim python3.8-dev python3-pip python3.8
+
+RUN pip3 install tensorflow==2.5
+
+RUN pip3 install OpenNMT-tf==2.1.1
+
+RUN pip3 install tensorflow-addons==0.13
+
+RUN pip3 install tensorflow_probability==0.13
+
+RUN pip3 install protobuf==3.20
+
+RUN pip3 install matplotlib
+
+RUN pip3 install seaborn
+
+# download the code from Zoom gitlab
+RUN mkdir -p -m 0600 ~/.ssh
+RUN touch ~/.ssh/known_hosts
+RUN ssh-keyscan -t rsa git.zoom.us >> /root/.ssh/known_hosts
+
+RUN mkdir -p /app/ \
+  && git clone https://github.com/qmpham/Latent-group-dropout.git /app/Latent-group-dropout
+
+# copy the current directory contents into the container at /app
+#COPY . /app
+
+# setting work directory
+WORKDIR /app/Latent-group-dropout
+
+CMD ["bash"]

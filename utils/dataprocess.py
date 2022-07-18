@@ -190,7 +190,7 @@ def ragged_map(*args):
 
   return src_batch, tgt_batch
 
-def create_multi_domain_meta_trainining_dataset(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length, meta_train_picking_prob=None, meta_test_picking_prob=None):
+def create_multi_domain_meta_training_dataset(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length, meta_train_picking_prob=None, meta_test_picking_prob=None):
   meta_train_datasets = [] 
   meta_test_datasets = [] 
   print("batch_type: ", batch_type)
@@ -262,7 +262,7 @@ def create_multi_domain_meta_trainining_dataset(strategy, model, domain, source_
   
   return meta_train_dataset, meta_test_dataset
 
-def create_multi_domain_meta_trainining_dataset_v1(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length):
+def create_multi_domain_meta_training_dataset_v1(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length):
   meta_train_datasets = [] 
   meta_test_datasets = [] 
   print("batch_type: ", batch_type)
@@ -308,7 +308,7 @@ def create_multi_domain_meta_trainining_dataset_v1(strategy, model, domain, sour
   
   return meta_train_dataset, meta_test_dataset
 
-def create_meta_trainining_dataset(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length):
+def create_meta_training_dataset(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length):
   meta_train_datasets = [] 
   meta_test_datasets = [] 
   for i, src,tgt in zip(domain,source_file,target_file):
@@ -340,7 +340,7 @@ def create_meta_trainining_dataset(strategy, model, domain, source_file, target_
 
   return meta_train_dataset, meta_test_dataset
 
-def create_trainining_dataset(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, src_langue=None, tgt_langue=None, single_pass=False, length_bucket_width=None, multi_domain=True, multi_lingual=False, picking_prob=None, temperature=1.0, pick_in_order=False, window_size=None):
+def create_training_dataset(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, src_langue=None, tgt_langue=None, single_pass=False, length_bucket_width=None, multi_domain=True, multi_lingual=False, picking_prob=None, temperature=1.0, pick_in_order=False, window_size=None):
 
   print("maximum_length", maximum_length)
   train_datasets = [] 
@@ -413,7 +413,7 @@ def create_trainining_dataset(strategy, model, domain, source_file, target_file,
 
   return train_dataset
 
-def create_trainining_dataset_hvd(model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, num_input_pipelines, 
+def create_training_dataset_hvd(model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, num_input_pipelines, 
                                   input_pipeline_id, num_replicas_in_sync, maximum_length, single_pass=False, length_bucket_width=None,
                                   multi_domain=True, picking_prob=None):
   train_datasets = [] 
@@ -452,7 +452,7 @@ def create_trainining_dataset_hvd(model, domain, source_file, target_file, batch
 
   return train_dataset
 
-def create_trainining_dataset_v1(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, multi_domain=True):
+def create_training_dataset_v1(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, multi_domain=True):
 
   train_datasets = [] 
   datasets_size = [count_lines(src) for src in source_file]
@@ -488,7 +488,7 @@ def create_trainining_dataset_v1(strategy, model, domain, source_file, target_fi
 
   return train_dataset
 
-def create_trainining_dataset_v2(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, length_bucket_width, multi_domain=True):
+def create_training_dataset_v2(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, length_bucket_width, multi_domain=True):
 
   train_datasets = [] 
   if multi_domain:
@@ -519,7 +519,7 @@ def create_trainining_dataset_v2(strategy, model, domain, source_file, target_fi
 
   return train_dataset
 
-def create_multi_domain_meta_trainining_dataset_v2(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length, picking_prob=None):
+def create_multi_domain_meta_training_dataset_v2(strategy, model, domain, source_file, target_file, batch_meta_train_size, batch_meta_test_size, batch_type, shuffle_buffer_size, maximum_length, picking_prob=None):
   meta_train_datasets = [None] * len(source_file)
   meta_train_base_datasets = [None] * len(source_file)
   meta_train_data_flows = [None] * len(source_file)
@@ -544,7 +544,7 @@ def create_multi_domain_meta_trainining_dataset_v2(strategy, model, domain, sour
   
   return meta_train_datasets
 
-def create_trainining_dataset_with_domain_tag(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None):
+def create_training_dataset_with_domain_tag(strategy, model, domain, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None):
 
   train_datasets = [] 
   
@@ -608,7 +608,7 @@ def meta_learning_function_on_next(metatrain_dataset, metatest_dataset, as_numpy
 
   return decorator
 
-def create_trainining_dataset_with_dprob(strategy, model, source_file, target_file, prob_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
+def create_training_dataset_with_dprob(strategy, model, source_file, target_file, prob_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
 
   print("maximum_length", maximum_length)
   train_datasets = [] 
@@ -651,7 +651,7 @@ def create_trainining_dataset_with_dprob(strategy, model, source_file, target_fi
 
   return train_dataset
 
-def create_trainining_dataset_DRO(strategy, model, source_file, target_file, prob_file, domain, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
+def create_training_dataset_DRO(strategy, model, source_file, target_file, prob_file, domain, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
 
   print("maximum_length", maximum_length)
   train_datasets = [] 
@@ -695,7 +695,7 @@ def create_trainining_dataset_DRO(strategy, model, source_file, target_file, pro
 
   return train_dataset
 
-def create_trainining_dataset_robustness(strategy, model, domain, is_noisy, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
+def create_training_dataset_robustness(strategy, model, domain, is_noisy, source_file, target_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0):
 
   print("maximum_length", maximum_length)
   print(batch_type)
@@ -762,7 +762,7 @@ def function_on_next(dataset, as_numpy=False):
 
   return decorator
 
-def create_priming_trainining_dataset(strategy, model, source_file, target_file, pre_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0, pick_in_order=False, window_size=None):
+def create_priming_training_dataset(strategy, model, source_file, target_file, pre_file, batch_train_size, batch_type, shuffle_buffer_size, maximum_length, single_pass=False, length_bucket_width=None, multi_domain=True, picking_prob=None, temperature=1.0, pick_in_order=False, window_size=None):
 
   print("maximum_length: ", maximum_length)
   print("shuffle_buffer_size: ", shuffle_buffer_size)
