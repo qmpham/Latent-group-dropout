@@ -28,7 +28,7 @@ module load nccl/2.4.2-1+cuda10.1 <br>
 module load gcc/10.1.0-cuda-openacc <br>
 module load cmake/3.18.0 <br>
 which python <br>
-python -c 'import tensorflow; print("tensorflow OK"); import transformers; print("transformers OK")' <br>
+python -c 'import tensorflow; print("tensorflow OK")' <br>
 python -u practice.py train_elbo_topK_sparse_layer_multi_layer --config configs/config_1365.yml <br>
 
 # Config file format (one example already provided in configs)
