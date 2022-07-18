@@ -7075,7 +7075,7 @@ class Multi_domain_SelfAttentionDecoder_sparse_multi_layer(Decoder):
                     minimum_iterations=0):
     if callable(embeddings):
       input_fn = embeddings 
-    if isinstance(embeddings, text_inputter.WordEmbedder):
+    elif isinstance(embeddings, text_inputter.WordEmbedder):
       input_fn = lambda ids: embeddings({"ids": ids})
     else:
       input_fn = lambda ids: tf.nn.embedding_lookup(embeddings, ids)
