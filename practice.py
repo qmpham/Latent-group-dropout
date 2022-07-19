@@ -36,7 +36,7 @@ def main():
   np.random.seed(seed) 
   #tf.random.set_seed(seed)
   parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
-  parser.add_argument("run", choices=["train","train_tf_25","translate_topK_sparse_layer_multi_layer_cluster","train_elbo_multilingual_topK_sparse_layer_multi_layer","finetune_elbo_topK_sparse_layer_multi_layer","train_elbo_sparse_layer","train_elbo_topK_sparse_layer_multi_layer","fewshot_elbo_topK_sparse_layer_multi_layer","train_elbo_topK_sparse_layer_multi_layer_v1","translatev3_tf_25","train_elbo_topK_sparse_layer","translate_topK_sparse_layer","translate_topK_sparse_layer_cluster","translate_topK_sparse_layer_multi_layer","translate_sparse_layer","priming_translate","priming_train_chasing", "priming_translate_chasing", "priming_train","CL_marine","train_domain_mixing_residual","train_L2W","train_IW_v0","train_NGD_L2W_v1","train_L2W_v2","train_L2W_g","train_L2W_v3","debug_L2W_v1","debug_L2W_v2","debug_L2W_v3","train_L2W_v1","train_NGD_L2W","debug_NGD","train_NGD", "continue_NGD", "score", "EWC_stat", "EWC_res_stat", "translate_farajan", "translate_farajan_residual", "train_adv", "train_wada", "finetune_noisy_v1", "finetune_wada", "finetune_wada_v1", "proxy", "debug_slurm_train", "metatrainv16", "proxy1","translatev7","kmeans", "translatev5", "translatev6","sentence_encode", "train_wdc", "train_denny_britz", "train_ldr", "visualize", "experimental_translate", "trainv3", "dcote", "metatrainv12", "trainv13", "trainv2", "trainv12", "metatrainv15", "translatev1", "trainv8", "translate", "translatev2", "translatev3", "metatrainv9", "metatrainv11", "debug","metatrainv1", "metatrainv2", "metatrainv3", "inspect", "metatrainv5", "metatrainv6", "metatrainv7", "metatrainv8", "metatrainv10", "elastic_finetune", "finetune"], help="Run type.")
+  parser.add_argument("run", choices=["train","train_tf_25","translate_topK_sparse_layer_multi_layer_cluster","translate_topK_multilingual_sparse_layer_multi_layer","train_elbo_multilingual_topK_sparse_layer_multi_layer","finetune_elbo_topK_sparse_layer_multi_layer","train_elbo_sparse_layer","train_elbo_topK_sparse_layer_multi_layer","fewshot_elbo_topK_sparse_layer_multi_layer","train_elbo_topK_sparse_layer_multi_layer_v1","translatev3_tf_25","train_elbo_topK_sparse_layer","translate_topK_sparse_layer","translate_topK_sparse_layer_cluster","translate_topK_sparse_layer_multi_layer","translate_sparse_layer","priming_translate","priming_train_chasing", "priming_translate_chasing", "priming_train","CL_marine","train_domain_mixing_residual","train_L2W","train_IW_v0","train_NGD_L2W_v1","train_L2W_v2","train_L2W_g","train_L2W_v3","debug_L2W_v1","debug_L2W_v2","debug_L2W_v3","train_L2W_v1","train_NGD_L2W","debug_NGD","train_NGD", "continue_NGD", "score", "EWC_stat", "EWC_res_stat", "translate_farajan", "translate_farajan_residual", "train_adv", "train_wada", "finetune_noisy_v1", "finetune_wada", "finetune_wada_v1", "proxy", "debug_slurm_train", "metatrainv16", "proxy1","translatev7","kmeans", "translatev5", "translatev6","sentence_encode", "train_wdc", "train_denny_britz", "train_ldr", "visualize", "experimental_translate", "trainv3", "dcote", "metatrainv12", "trainv13", "trainv2", "trainv12", "metatrainv15", "translatev1", "trainv8", "translate", "translatev2", "translatev3", "metatrainv9", "metatrainv11", "debug","metatrainv1", "metatrainv2", "metatrainv3", "inspect", "metatrainv5", "metatrainv6", "metatrainv7", "metatrainv8", "metatrainv10", "elastic_finetune", "finetune"], help="Run type.")
   parser.add_argument("--config", help="configuration file")
   parser.add_argument("--config_root")
   parser.add_argument("--src")
@@ -1738,7 +1738,7 @@ def main():
     print("dropout",config.get("dropout",0.1)),
     print("attention_dropout",config.get("attention_dropout",0.1)),
     print("ffn_dropout",config.get("ffn_dropout",0.1)),
-    task.train_elbo_topK_sparse_layer_multi_layer(config, meta_test_optimizer, learning_rate, model, strategy, checkpoint_manager, checkpoint,adapter_optimizer=adapter_optimizer, checkpoint_path=config.get("checkpoint_path",None), maximum_length=config.get("maximum_length",80), experiment=experiment, save_every=config.get("save_every",5000), eval_every=config.get("eval_every",10000), report_every=config.get("eval_every",100))
+    task.train_elbo_topK_sparse_layer_multi_layer(config, meta_test_optimizer, learning_rate, model, strategy, checkpoint_manager, checkpoint,adapter_optimizer=adapter_optimizer, checkpoint_path=config.get("checkpoint_path",None), maximum_length=config.get("maximum_length",80), experiment=experiment, save_every=config.get("save_every",5000), eval_every=config.get("eval_every",10000), report_every=config.get("report_every",100))
   elif args.run == "finetune_elbo_topK_sparse_layer_multi_layer":
     print("num_units",config.get("num_units",512)),
     print("num_heads",config.get("num_heads",8)),
@@ -1942,6 +1942,29 @@ def main():
       print("output_file: ", output_file)
       task.translate_topK_sparse_layer_multi_layer(src_file, None, model, new_checkpoint_manager, checkpoint, int(domain), output_file, topK=topK, length_penalty=0.6, experiment=experiment)
   
+  elif args.run == "translate_topK_multilingual_sparse_layer_multi_layer":
+    topK = config.get("domain_group_allocation_num",int( (1-config.get("dropout_rate",0.3)) * config.get("num_domain_unit_group",12)))
+    model.create_variables()
+    print("topK:",topK)
+    num_languages = config.get("num_languages",None)
+    assert num_languages>0, "This is multilingual training, please declare number of languages in config file"
+    translate_config_file = args.src
+    with open(translate_config_file, "r") as stream:
+      translate_config = yaml.load(stream)
+    new_checkpoint_manager = average_checkpoints_tf2_3(config["model_dir"], output_dir="%s/averaged_checkpoint"%config["model_dir"], trackables={"model":model},
+                        max_count=translate_config.get("max_count",3),
+                        model_key="model")
+    
+    for i, logit in enumerate(model.latent_group_allocation_logit_per_layer):
+      print("unit_allocation_logit_layer_%d"%i)
+      tf.print(logit,summarize=-1)
+      
+    for src_file, domain in zip(translate_config["src"], translate_config["domain"]):      
+      output_file = os.path.join(config["model_dir"],"eval",os.path.basename(src_file) + ".trans")
+      print("translating %s in domain %d"%(src_file, domain))
+      print("output_file: ", output_file)
+      task.translate_topK_sparse_layer_multi_layer(src_file, None, model, new_checkpoint_manager, checkpoint, int(domain)//num_languages, output_file, topK=topK, length_penalty=0.6, experiment=experiment)
+
   elif args.run == "translate_topK_sparse_layer_cluster":
     topK = config.get("domain_group_allocation_num",int( (1-config.get("dropout_rate")) * config.get("num_domain_unit_group")))
     model.create_variables()
